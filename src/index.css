@@ -1,0 +1,125 @@
+/* html, body {
+  max-width: 100%;
+  height: auto;
+  font-family: Calibri Regular, Arial, sans-serif;
+  color: #333
+}  */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  
+  }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px; 
+  border: 1px solid rgb(145, 142, 142);
+  height: 630px;
+  justify-content: space-between;
+  flex: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.columnOne form{
+  margin: 150px 200px 30px 300px;
+  border: 1px solid gray;
+  width:120px;
+  height: 60px;
+
+}
+
+form p{
+  text-align: center;  
+}
+
+.controls {
+  display: flex; 
+  justify-content: space-between;
+  justify-items: center;
+  width: 400px;
+  margin-left: 180px;
+  margin-right: 200px;
+ 
+} 
+
+.controls button{
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: none; 
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 25px;
+  margin-right: 55px;
+}  
+
+#incrementButton{
+  background-color: rgb(12, 159, 159);
+  color: white;
+}
+
+#decrementButton{
+  background-color: orange;
+  color: black;
+}
+.columnTwo form{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 500px;
+}
+
+#addPlayer{
+  height: 25px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(210, 208, 208);
+}
+#add{
+  width: 100px;
+  height: 25px;
+  margin-left: 10px;
+  border: 2px solid rgb(70, 224, 173);
+  border-radius: 5px;
+  color: rgb(70, 224, 173);
+  font-weight: bold;
+  background-color: white;
+}
+table {
+  margin-left: 50px; 
+  border-collapse: collapse;
+  text-align: center;
+  border: none;  
+}  
+
+table tr{
+  border-bottom: 1px solid rgb(178, 174, 174);
+}
+
+
+/* @media (max-width: 600px) {
+   .App {
+      grid-template-columns: 1fr;
+  }
+}   
+ */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .controls {
+    width: 100%;
+  }
+}
